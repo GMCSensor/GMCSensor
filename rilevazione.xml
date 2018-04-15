@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+- phpMyAdmin XML Dump
+- version 4.1.7
+- http://www.phpmyadmin.net
+-
+- Host: localhost
+- Generation Time: Apr 15, 2018 alle 15:24
+- Versione del server: 5.6.33-log
+- PHP Version: 5.3.10
+-->
+
+<pma_xml_export version="1.0" xmlns:pma="http://www.phpmyadmin.net/some_doc_url/">
+    <!--
+    - Structure schemas
+    -->
+    <pma:structure_schemas>
+        <pma:database name="my_easysensor" collation="latin1_swedish_ci" charset="latin1">
+            <pma:table name="rilevazione">
+                CREATE TABLE `rilevazione` (
+                  `id_rilevazione` int(20) NOT NULL AUTO_INCREMENT,
+                  `id_sensoreFK` int(10) NOT NULL,
+                  `rilevazione` varchar(10) DEFAULT NULL,
+                  `data` varchar(10) DEFAULT NULL,
+                  `ora` varchar(8) CHARACTER SET utf8mb4 COLLATE utf8mb4_bin DEFAULT NULL,
+                  `errore` tinyint(1) DEFAULT NULL,
+                  `descrizione` varchar(255) DEFAULT NULL,
+                  `nomeImpianto` varchar(30) DEFAULT NULL,
+                  `gps` varchar(30) DEFAULT NULL,
+                  `nomenclatura` varchar(30) DEFAULT NULL,
+                  PRIMARY KEY (`id_rilevazione`),
+                  KEY `id_sensoreFK` (`id_sensoreFK`)
+                ) ENGINE=MyISAM AUTO_INCREMENT=649 DEFAULT CHARSET=latin1;
+            </pma:table>
+        </pma:database>
+    </pma:structure_schemas>
+
+    <!--
+    - Database: 'my_easysensor'
+    -->
+    <database name="my_easysensor">
+        <!-- Tabella rilevazione -->
+        <table name="rilevazione">
+            <column name="id_rilevazione">648</column>
+            <column name="id_sensoreFK">115</column>
+            <column name="rilevazione">0000</column>
+            <column name="data">2017-08-21</column>
+            <column name="ora">23:30:30</column>
+            <column name="errore">0</column>
+            <column name="descrizione">NULL</column>
+            <column name="nomeImpianto">Impianto10</column>
+            <column name="gps">3198374657</column>
+            <column name="nomenclatura">NULL</column>
+        </table>
+        <table name="rilevazione">
+            <column name="id_rilevazione">647</column>
+            <column name="id_sensoreFK">115</column>
+            <column name="rilevazione">0000</column>
+            <column name="data">2017-08-21</column>
+            <column name="ora">23:30:30</column>
+            <column name="errore">0</column>
+            <column name="descrizione">NULL</column>
+            <column name="nomeImpianto">Impianto10</column>
+            <column name="gps">3198374657</column>
+            <column name="nomenclatura">NULL</column>
+        </table>
+        <table name="rilevazione">
+            <column name="id_rilevazione">646</column>
+            <column name="id_sensoreFK">115</column>
+            <column name="rilevazione">0000</column>
+            <column name="data">2017-08-21</column>
+            <column name="ora">23:30:30</column>
+            <column name="errore">0</column>
+            <column name="descrizione">NULL</column>
+            <column name="nomeImpianto">Impianto10</column>
+            <column name="gps">3198374657</column>
+            <column name="nomenclatura">NULL</column>
+        </table>
+        <table name="rilevazione">
+            <column name="id_rilevazione">645</column>
+            <column name="id_sensoreFK">115</column>
+            <column name="rilevazione">0000</column>
+            <column name="data">2017-08-21</column>
+            <column name="ora">23:30:30</column>
+            <column name="errore">0</column>
+            <column name="descrizione">NULL</column>
+            <column name="nomeImpianto">Impianto10</column>
+            <column name="gps">3198374657</column>
+            <column name="nomenclatura">NULL</column>
+        </table>
+        <table name="rilevazione">
+            <column name="id_rilevazione">644</column>
+            <column name="id_sensoreFK">115</column>
+            <column name="rilevazione">0000</column>
+            <column name="data">2017-08-21</column>
+            <column name="ora">23:30:30</column>
+            <column name="errore">0</column>
+            <column name="descrizione">nuovaDescrizione</column>
+            <column name="nomeImpianto">Impianto10</column>
+            <column name="gps">3198374657</column>
+            <column name="nomenclatura">NULL</column>
+        </table>
+        <table name="rilevazione">
+            <column name="id_rilevazione">643</column>
+            <column name="id_sensoreFK">115</column>
+            <column name="rilevazione">0000</column>
+            <column name="data">2017-08-21</column>
+            <column name="ora">23:30:30</column>
+            <column name="errore">0</column>
+            <column name="descrizione">DescrizioneTestFinale</column>
+            <column name="nomeImpianto">Impianto10</column>
+            <column name="gps">3198374657</column>
+            <column name="nomenclatura">NULL</column>
+        </table>
+        <table name="rilevazione">
+            <column name="id_rilevazione">639</column>
+            <column name="id_sensoreFK">42</column>
+            <column name="rilevazione">####</column>
+            <column name="data">##########</column>
+            <column name="ora">########</column>
+            <column name="errore">1</column>
+            <column name="descrizione">Prova FianleErrore</column>
+            <column name="nomeImpianto">##########</column>
+            <column name="gps">##########</column>
+            <column name="nomenclatura">NULL</column>
+        </table>
+        <table name="rilevazione">
+            <column name="id_rilevazione">638</column>
+            <column name="id_sensoreFK">42</column>
+            <column name="rilevazione">####</column>
+            <column name="data">##########</column>
+            <column name="ora">########</column>
+            <column name="errore">1</column>
+            <column name="descrizione">d</column>
+            <column name="nomeImpianto">##########</column>
+            <column name="gps">##########</column>
+            <column name="nomenclatura">NULL</column>
+        </table>
+        <table name="rilevazione">
+            <column name="id_rilevazione">637</column>
+            <column name="id_sensoreFK">43</column>
+            <column name="rilevazione">0000</column>
+            <column name="data">0000000000</column>
+            <column name="ora">NULL</column>
+            <column name="errore">1</column>
+            <column name="descrizione">Prova Finale3</column>
+            <column name="nomeImpianto">000000000000000</column>
+            <column name="gps">NULL</column>
+            <column name="nomenclatura">NULL</column>
+        </table>
+        <table name="rilevazione">
+            <column name="id_rilevazione">636</column>
+            <column name="id_sensoreFK">43</column>
+            <column name="rilevazione">2222</column>
+            <column name="data">2017-08-17</column>
+            <column name="ora">NULL</column>
+            <column name="errore">0</column>
+            <column name="descrizione">prova finale2</column>
+            <column name="nomeImpianto">Impianto1      </column>
+            <column name="gps">NULL</column>
+            <column name="nomenclatura">NULL</column>
+        </table>
+        <table name="rilevazione">
+            <column name="id_rilevazione">635</column>
+            <column name="id_sensoreFK">21</column>
+            <column name="rilevazione">1579</column>
+            <column name="data">2017-08-17</column>
+            <column name="ora">23:01:54</column>
+            <column name="errore">0</column>
+            <column name="descrizione">prova finale</column>
+            <column name="nomeImpianto">NULL</column>
+            <column name="gps">NULL</column>
+            <column name="nomenclatura">NULL</column>
+        </table>
+        <table name="rilevazione">
+            <column name="id_rilevazione">634</column>
+            <column name="id_sensoreFK">43</column>
+            <column name="rilevazione">2222</column>
+            <column name="data">2017-08-22</column>
+            <column name="ora">NULL</column>
+            <column name="errore">0</column>
+            <column name="descrizione">descrizioneTest</column>
+            <column name="nomeImpianto">Impianto1      </column>
+            <column name="gps">NULL</column>
+            <column name="nomenclatura">NULL</column>
+        </table>
+        <table name="rilevazione">
+            <column name="id_rilevazione">633</column>
+            <column name="id_sensoreFK">43</column>
+            <column name="rilevazione">0032</column>
+            <column name="data">2017-08-17</column>
+            <column name="ora">NULL</column>
+            <column name="errore">0</column>
+            <column name="descrizione">descrizioneTest</column>
+            <column name="nomeImpianto">Impianto1      </column>
+            <column name="gps">NULL</column>
+            <column name="nomenclatura">NULL</column>
+        </table>
+        <table name="rilevazione">
+            <column name="id_rilevazione">631</column>
+            <column name="id_sensoreFK">21</column>
+            <column name="rilevazione">1579</column>
+            <column name="data">2017-08-17</column>
+            <column name="ora">23:01:54</column>
+            <column name="errore">0</column>
+            <column name="descrizione">descrizione di test</column>
+            <column name="nomeImpianto">NULL</column>
+            <column name="gps">NULL</column>
+            <column name="nomenclatura">NULL</column>
+        </table>
+        <table name="rilevazione">
+            <column name="id_rilevazione">632</column>
+            <column name="id_sensoreFK">42</column>
+            <column name="rilevazione">####</column>
+            <column name="data">##########</column>
+            <column name="ora">########</column>
+            <column name="errore">1</column>
+            <column name="descrizione">descrizione di test</column>
+            <column name="nomeImpianto">##########</column>
+            <column name="gps">##########</column>
+            <column name="nomenclatura">NULL</column>
+        </table>
+        <table name="rilevazione">
+            <column name="id_rilevazione">627</column>
+            <column name="id_sensoreFK">115</column>
+            <column name="rilevazione">3198</column>
+            <column name="data">2017-08-21</column>
+            <column name="ora">23:30:30</column>
+            <column name="errore">0</column>
+            <column name="descrizione">NULL</column>
+            <column name="nomeImpianto">Impianto10</column>
+            <column name="gps">37465790</column>
+            <column name="nomenclatura">NULL</column>
+        </table>
+    </database>
+</pma_xml_export>
